@@ -9,29 +9,29 @@
 import UIKit
 
 protocol ImagesFactoryProtocol: class {
-    func createImagesArray(labelArray: [UILabel]) -> [UIImage]?
-    func getImageFromLabel(_ label: UILabel) -> UIImage?
+    func createImagesArray(labelArray: [UILabel]) -> [UIImage]?;
+    func getImageFromLabel(_ label: UILabel) -> UIImage?;
 }
 
 final class ImagesFactory: ImagesFactoryProtocol {
     
     func createImagesArray(labelArray: [UILabel]) -> [UIImage]? {
-        guard !labelArray.isEmpty else { return nil }
-        var images = [UIImage]()
+        guard !labelArray.isEmpty else { return nil };
+        var images = [UIImage]();
         for (_, label) in labelArray.enumerated() {
             if let image = getImageFromLabel(label) {
-                images.append(image)
+                images.append(image);
             }
         }
-        return images
+        return images;
     }
     
     func getImageFromLabel(_ label: UILabel) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(label.frame.size, false, 0)
-        guard let context = UIGraphicsGetCurrentContext() else { exit(0) }
-        label.layer.render(in: context)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
+        UIGraphicsBeginImageContextWithOptions(label.frame.size, false, 0);
+        guard let context = UIGraphicsGetCurrentContext() else { exit(0) };
+        label.layer.render(in: context);
+        let image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return image;
     }
 }
