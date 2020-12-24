@@ -1,5 +1,11 @@
-
+//
 //  TextViewParameters.swift
+//  WordsAsTagLabels
+//
+//  Created by Volodymyr Vozniak on 12/06/2020.
+//  Modified by Austin Marino on 12/23/2020
+//  Copyright © 2020 com.vivatum. All rights reserved.
+//
 
 import UIKit
 

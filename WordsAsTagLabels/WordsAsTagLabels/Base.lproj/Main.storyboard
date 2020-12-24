@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Horizontal Tag Scrolling-->
+        <!--WordsAsTagLabels-->
         <scene sceneID="ANt-iP-3m0">
             <objects>
                 <tableViewController id="OOE-dV-b8s" customClass="DemoTableViewController" customModule="WordsAsTagLabels" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="GmB-cx-BmY">
+                            <tableViewSection headerTitle="Horizontal Scrolling" id="GmB-cx-BmY">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="demoTagsCell" id="wXB-0L-GFt">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -35,7 +35,7 @@
                             <outlet property="delegate" destination="OOE-dV-b8s" id="cO0-mA-L4O"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Horizontal Tag Scrolling" prompt="Demo" id="Afl-91-ngT"/>
+                    <navigationItem key="navigationItem" title="WordsAsTagLabels" prompt="Demo" id="Afl-91-ngT"/>
                     <connections>
                         <outlet property="demoTagsCell" destination="wXB-0L-GFt" id="8R0-BM-CJN"/>
                     </connections>

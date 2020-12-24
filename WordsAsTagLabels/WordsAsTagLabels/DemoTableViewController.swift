@@ -20,6 +20,7 @@ final class DemoTableViewController: UITableViewController {
         super.viewDidLoad();
         self.builder = ScrollViewBuilder();
         self.createTagsView(for: words);
+        self.tableView.tableFooterView = UIView(frame: .zero);
     }
     
     func createTagsView(for stringArray: [String]) {

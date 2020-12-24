@@ -4,7 +4,8 @@
 
 That small iOS app is my solution for the case: **Creating TagLabels for words array**
 
-![Final TextView](/readmePics/Screenshot.png)
+![Final TextView](./readmeMedia/WordsAsTagLabelsDemo.gif)
+
 
 
 
