@@ -2,7 +2,7 @@
 [![Swift Version][swift-image]][swift-url]
 
 
-That small iOS app is my solution for the case: **Creating TagLabels for words array**
+This small iOS app is a solution for the case: **Creating Tag-Labels** for a String array & **Horizontally Scrolling** through them in a TableViewCell.
 
 ![Final TextView](./readmeMedia/WordsAsTagLabelsDemo.gif)
 
@@ -12,12 +12,13 @@ That small iOS app is my solution for the case: **Creating TagLabels for words a
 ### The Solution Logic
 
 1. Converting Strings to Labels
-1. Customizing Labels
-1. Converting Labels to Images
-1. Converting Images to Attributed text
-1. Creating TextView
-1. Setting Attributed text to TextView
-
+2. Customizing Labels
+3. Converting Labels to Images
+4. Converting Images to Attributed text
+5. Creating TextView
+6. Setting Attributed text to TextView
+7. Adding TextView as a subview to ScollView
+8. Adding ScrollView as a subview to TableViewCell
 
 
 ## Meta
